@@ -64,8 +64,6 @@ Fields include:
 - `CreatedAtUtc` – Record creation timestamp
 - `UpdatedAtUtc` – Last modification timestamp
 
----
-
 ## TransactionAudits
 Stores historical changes made to transactions.
 
@@ -84,7 +82,6 @@ Fields include:
 ---
 
 ## Project Structure
-
 - **Models/** – Database entity models  
 - **Data/** – Entity Framework Core DbContext  
 - **Services/** – Snapshot loading and ingestion logic  
@@ -112,7 +109,9 @@ Fields include:
 ## How to Run
 
 Restore dependencies: dotnet restore
+
 Run the application: dotnet run
+
 The application will:
 1. Load transactions from `MockData/transactions.json`
 2. Process ingestion logic
@@ -122,7 +121,9 @@ The application will:
 
 ## How to Test
 Automated tests validate ingestion logic.
+
 Run tests using: dotnet test
+
 Tests currently verify:
 - transaction insertion
 - update detection
@@ -133,7 +134,6 @@ Tests currently verify:
 
 ## Included Deliverables
 This repository includes:
-
 - .NET console application source code
 - EF Core code-first models and DbContext
 - SQLite-backed local database configuration
