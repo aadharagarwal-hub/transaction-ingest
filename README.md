@@ -85,15 +85,16 @@ Fields include:
 
 ## Project Structure
 
-TransactionIngest
-│
-├── Models/       # Database entity models
-├── Data/         # EF Core DbContext
-├── Services/     # Business logic services
-├── DTOs/         # Snapshot DTO models
-├── MockData/     # Local snapshot JSON used for testing
-├── Program.cs    # Application entry point
-└── appsettings.json
+- **Models/** – Database entity models  
+- **Data/** – Entity Framework Core DbContext  
+- **Services/** – Snapshot loading and ingestion logic  
+- **DTOs/** – Data transfer objects for snapshot input  
+- **MockData/** – Local JSON snapshot used for testing  
+- **TransactionIngest.Tests/** – Automated test project  
+- **Program.cs** – Application entry point  
+- **appsettings.json** – Configuration for database and snapshot path  
+- **TransactionIngest.csproj** – Project configuration  
+- **README.md** – Project documentation
 
 ---
 
