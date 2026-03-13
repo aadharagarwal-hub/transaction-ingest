@@ -122,7 +122,7 @@ The application will:
 ## How to Test
 Automated tests validate ingestion logic.
 
-Run tests using: dotnet test
+Run tests using: dotnet test TransactionIngest.Tests/TransactionIngest.Tests.csproj
 
 Tests currently verify:
 - transaction insertion
